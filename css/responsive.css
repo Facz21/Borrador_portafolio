@@ -147,6 +147,16 @@
   }
 }
 
+@media (max-width: 600px) {
+  .projects-section { grid-template-columns: 1fr; gap: 1rem; }
+  .projects-card { padding: 1rem; border-radius: 14px; }
+}
+
+@media (max-width: 480px) {
+  main { padding: 1rem; }
+  main section { padding: 1rem; }
+}
+
 /* =====================
    Small mobile – ≤ 480px
    ===================== */

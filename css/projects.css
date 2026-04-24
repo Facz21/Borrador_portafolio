@@ -1,11 +1,13 @@
 .projects-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  gap: 1.5rem;
 }
 
 .projects-card {
+    
+    width: 100%;
+    box-sizing: border-box;
     background-color: white;
     padding: 1.5rem;
     border-radius: 20px;
