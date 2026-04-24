@@ -1,12 +1,31 @@
-footer{
-    background-color: rgb(151, 115, 115);
-    border: 2px solid black;
+footer {
     display: flex;
-    justify-content: space-between;
-    border-radius: 25px 25px 0px 0px; 
+    justify-content: center;
+    padding: 1rem 0.5rem;
+    background-color: rgb(17, 17, 17);
 }
 
-footer p{
+footer p {
     padding-left: 32px;
     padding-right: 32px;
 }
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 48px;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer small {
+    opacity: 0.95;
+}
+

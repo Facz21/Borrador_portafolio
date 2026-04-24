@@ -29,9 +29,11 @@
 .hamburger.is-active span:nth-child(1) {
   transform: translateY(10px) rotate(45deg);
 }
+
 .hamburger.is-active span:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger.is-active span:nth-child(3) {
   transform: translateY(-10px) rotate(-45deg);
 }
@@ -47,8 +49,9 @@
   }
 
   .texto-presentacion {
-     margin-bottom: 0;
+    margin-bottom: 0;
   }
+
   .texto-presentacion h2 {
     font-size: 3rem;
   }
@@ -56,6 +59,24 @@
   main section {
     margin: 1.5rem 1rem;
     padding: 1.5rem;
+  }
+
+  footer {
+    justify-content: center;
+    padding: 1rem 0;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 48px;
+  }
+
+  footer p {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -110,7 +131,7 @@
   }
 
   .texto-presentacion {
-     margin-bottom: 0;
+    margin-bottom: 0;
   }
 
   .texto-presentacion p {
@@ -140,45 +161,59 @@
     padding: 1rem;
   }
 
-  /* Footer */
-  footer {
+  
+ .footer-container {
     flex-direction: column;
     text-align: center;
+    gap: 0.5rem;
+    padding: 1rem 0.5rem;
   }
 }
 
 @media (max-width: 600px) {
-  .projects-section { grid-template-columns: 1fr; gap: 1rem; }
-  .projects-card { padding: 1rem; border-radius: 14px; }
+  .projects-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .projects-card {
+    padding: 1rem;
+    border-radius: 14px;
+  }
 }
 
 @media (max-width: 480px) {
-  main { padding: 1rem; }
-  main section { padding: 1rem; }
+  main {
+    padding: 1rem;
+  }
+
+  main section {
+    padding: 1rem;
+  }
 }
 
 /* =====================
    Small mobile – ≤ 480px
    ===================== */
 @media (max-width: 480px) {
-  
+
   h1 {
     margin-left: 1rem;
     font-size: 1.4rem;
   }
 
-  .hamburger{
+  .hamburger {
     margin-right: inherit;
   }
 
 
   .texto-presentacion {
-     margin-bottom: 0;
+    margin-bottom: 0;
   }
 
   .texto-presentacion p {
     font-size: 1.1rem;
-    
+
   }
 
   .texto-presentacion h2 {
@@ -200,6 +235,9 @@
     font-size: 1.1rem;
   }
 
+  .footer-container {
+    font-size: 0.9rem;
+  }
 
   main section {
     margin: 0.5rem 0.25rem;
@@ -207,3 +245,5 @@
     border-radius: 15px;
   }
 }
+
+
